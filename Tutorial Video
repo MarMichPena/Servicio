@@ -1,0 +1,37 @@
+#----------------------------------
+#       NUMERICOS
+#----------------------------------
+
+positivo <- 20
+
+#operaciones basicas
+positivo+10
+positivo-10
+positivo/10
+positivo**3
+
+#modulo
+positivo %% 5
+positivo %% 6
+positivo %% 7
+
+#Enteros negativos
+negativo <- -15
+negativo*-1
+negativo**2
+
+#Con decimales
+decimal <- 2.71828
+ceiling(decimal)
+floor(decimal)
+trunc(decimal)
+
+
+
+
+
+# Solucion del ejercicio
+
+numero <- 2.71828
+
+trunc(numero*100)/100
