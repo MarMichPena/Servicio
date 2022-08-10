@@ -1,0 +1,38 @@
+#---------------------------------------
+#           String
+#---------------------------------------
+
+usuario <- "la propuesta"
+
+
+#cuantos caracteres tiene el nombre de usuario
+nchar_usuario <- nchar(usuario)
+
+#convertir el string en mayusculas o minusculas
+tolower(usuario)
+toupper(usuario)
+
+#obtener un pedazo (substring) del string
+substr(usuario, 1, 5)
+substr(usuario,6,nchar_usuario)
+
+#Sustituir valores del string
+sub("l", "L", usuario)
+gsub("a", "A",usuario)
+sub("la","LA",usuario)
+
+#pegar (conccatenar) dos o mas string
+paste("mi nombre de usuario de league of legends es:",
+      usuario,
+      sep = " ")
+
+#ejercicio
+
+oracion <- "Don Draper lucha por mantenerse en la cima del grupo Sterling-Cooper"
+
+frase <- sub("Don Draper","Richard Whitman",oracion)
+
+paste("en la serie Madmen:",
+      frase,
+      sep = " ")
+
