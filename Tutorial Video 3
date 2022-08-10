@@ -1,0 +1,59 @@
+#----------------------------------
+#               Logicos
+#----------------------------------
+
+#Los posibles valores logicos 
+TRUE
+FALSE
+
+#calificacion del primer examen
+calificacion_examen1 <- 8.5
+
+#sacamos 10?
+calificacion_examen1==10
+
+#aprobamos?
+calificacion_examen1>=6
+
+#obtuvimos calificacion >6 y <87
+calificacion_examen1 > 6 & calificacion_examen1 < 8
+
+#realizamos un segundo examen
+calificacion_examen2 <- 5.9
+
+#tenemos algun examen reprbado?
+calificacion_examen1 < 6 | calificacion_examen2 < 6
+
+#validar la no igualdad 
+calificacion_examen1 != calificacion_examen2
+
+#nombre de usuario en league of legends
+usuario <- "marmich1921penacastro"
+
+#validar igualdad
+usuario == "faker"
+
+#validar el numero de caracteres
+val_numchar <- nchar(usuario) > 10
+
+#validar que no contenga una palabra en particular
+val_noob <- !grepl("Noob", usuario)
+
+#validar que no comience con .
+val_punto <- substr(usuario, 1, 1) !="."
+val_punto
+
+#validar que cumpla con las tres condiciones anteriores
+val_numchar & val_noob & val_punto
+
+#sumando valores logicos
+TRUE==1
+FALSE==0
+TRUE + TRUE + FALSE + FALSE + TRUE
+
+#---- Ejercicio
+
+Usuario <-"RIOT Mictlan"
+
+nchar(usuario) <10 & !grepl("RIOT",usuario) & 
+  usuario != "ElVaipa" & usuario !="Ixtli"
