@@ -1,0 +1,11 @@
+install.packages("dplyr")
+library(dplyr)
+sd <- read.csv(file.choose())
+df <-  as_tibble(sd) %>%
+  filter(ent == 15,sex == 2) %>%
+  mutate(df = case_when(eda >= 0 & eda <= 14 ~ 1,
+                        eda >= 15 & eda <= 29 ~ 2,
+                        eda >= 30 & eda <= 59 ~ 3,
+                        eda >= 60 ~ 4))
+  df %>%  group_by(sex) %>%   
+    summarise(mean = mean(eda), sum = sum(salario), n = n())
